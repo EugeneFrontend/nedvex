@@ -1,0 +1,244 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	color: #4c4f5f;
+	font: 300 16px/18px 'Roboto', sans-serif;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	font-weight: normal;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul, ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.img, img{
+	max-width: 100%;
+}
+textarea{
+	resize: vertical;
+}
+/* DEFAULT CLASSES START */
+.bg-white{
+	background-color: #fff;
+}
+.bg-gray{
+	background-color: #f6f6f6;
+}
+/* DEFAULT CLASSES END */
+/* DEFAULT COMPONENT START */
+
+/* === TITLE === */
+.title {
+    font-weight: 500;
+	font-size: 25px;
+	color: #4c4f5f;
+}
+.title-bold{
+	font-weight: 700;
+    font-size: 20px;
+}
+.text-center{
+	text-align: center;
+}
+.text-white{
+	color: #fff;
+}
+.title.less-margin {
+    margin-bottom: 12px;
+}
+.title-small {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* === BUTTON === */
+.btn{
+	font-family: 'Roboto', sans-serif;
+	border-radius: 25px;
+	line-height: 1;
+	padding: 15px 50px;
+	font-size: 16px;
+	border: none;
+    vertical-align: baseline;
+}
+.btn.btn-default{
+	color: #4c4f5f;
+	background-color: rgb(255, 255, 255);
+}
+.btn.btn-default:hover{
+	color: #fff;
+	background-color: rgb(224, 164, 70);
+}
+.btn.small-btn {
+    padding: 15px;
+}
+.medium-btn {
+	padding: 15px 28px;
+}
+/* === BUTTON END === */
+
+/* DEFAULT COMPONENT END */
+/* CUSTOM STYLE START */
+.header {
+    background-color: transparent;
+    padding: 45px 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.container-fluid {
+    padding: 0 145px;
+}
+.logo {
+    float: left;
+}
+/* === INNER === */
+.inner{
+	height: 100vh;
+	background: url(../img/inner_bg.jpg) no-repeat center / cover;
+	position: relative;
+	overflow: hidden;
+}
+.inner::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(60, 129, 181, .4);
+    position: absolute;
+    left: 0;
+}
+.inner .inner-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	height: 100%;
+	position: relative;
+}
+.inner .inner-content h1 {
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: .5em;
+    margin-bottom: 38px;
+}
+.inner .inner-content .slogan {
+    font-weight: 300;
+    font-size: 38px;
+	letter-spacing: .3em;
+	line-height: 35px;
+}
+.inner .inner-content .inner-description {
+    flex-basis: 50%;
+}
+.inner .inner-content .inner-description p {
+    margin-top: 48px;
+}
+.inner-button {
+    margin-top: 46px;
+}
+.inner-button .btn .fa {
+    margin-right: 15px;
+}
+.inner-button .btn + .btn {
+    margin-left: 24px;
+}
+/* === INNER END === */
+
+/* === START NOW === */
+.start_now {
+	padding: 100px 0;
+	background: url(../img/start-now.jpg) no-repeat center / cover;
+	position: relative;
+}
+.start_now::before {
+    content: '';
+    width: 100%;
+    background-color: rgba(60, 129, 181, .4);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+}
+.start_now .container {
+    position: relative;
+}
+.start_now .container .title {
+    padding-bottom: 16px;
+}
+.start_now .container p {
+	margin-bottom: 65px;
+}
+.start_now .btn{
+    min-width: 236px;
+    display: inline-block;
+}
+.start_now .btn .fa {
+    margin-right: 26px;
+}
+.start_now .btn + .btn {
+    margin-left: 30px;
+}
+/* === START END === */
+
+/* === CAPABILITIES === */
+.capabilities {
+    padding: 70px 0 80px;
+}
+.capabilities .container {
+    display: flex;
+    justify-content: space-around;
+}
+.capabilities .capabilities-description {
+    flex-basis: 18%;
+}
+.capabilities .capabilities-list {
+    margin-top: 80px;
+}
+.capabilities .capabilities-list-item {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 45px;
+}
+.capabilities .capabilities-list-item .fa{
+    position: absolute;
+	left: 0;
+	top: 2px;
+}
+.capabilities .container .capabilities-list-item span {
+    display: block;
+}
+/* === CAPABILITIES END === */
+
+/* === FOOTER === */
+footer {
+    padding: 80px 0 40px;
+}
+footer .footer-content{
+	display: flex;
+    justify-content: space-around;
+}
+footer .footer-content{
+    line-height: 28px;
+}
+footer .footer-content .footer-email{
+    color: #469ee0;
+}
+footer .footer-content .footer-phone{
+	color: #4c4f5f;
+}
+/* === FOOTER END === */
+
+/* CUSTOM STYLE END */
